@@ -34,14 +34,14 @@ public class AvitoPage extends WebPage {
     @Name("сортировка")
     private final SelenideElement sortDropDown = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]");
 
-//    @Name("Дороже")
-//    private SelenideElement sortExpensive = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"2\"]");
-//    @Name("Дешевле")
-//    private SelenideElement sortCheap = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"1\"]");
-//    @Name("По умолчанию")
-//    private SelenideElement sortDefault = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"101\"]");
-//    @Name("По дате")
-//    private SelenideElement sortDate = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"104\"]");
+    @Name("Дороже")
+    private SelenideElement sortExpensive = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"2\"]");
+    @Name("Дешевле")
+    private SelenideElement sortCheap = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"1\"]");
+    @Name("По умолчанию")
+    private SelenideElement sortDefault = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"101\"]");
+    @Name("По дате")
+    private SelenideElement sortDate = $x("//*[@class=\"index-topPanel-McfCA\"]/div/select[@class=\"select-select-IdfiC\"]/option[@value=\"104\"]");
 //    private SelenideElement searchName = $x("(//*[@data-marker=\"catalog-serp\"]/div/div/div/div/a/h3[@itemprop=\"name\"])[%d]");
 //    private SelenideElement price = $x("(//*[@data-marker=\"catalog-serp\"]/div/div/div/div/span/span/meta[@itemprop=\"price\"][%d])");
 
