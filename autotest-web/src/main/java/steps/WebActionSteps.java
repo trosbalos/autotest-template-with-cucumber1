@@ -137,18 +137,17 @@ public class WebActionSteps {
 
     @И("в выпадающем списке {string} выбрать {value}")
     public void categoryDropDownEnum(String list, Value value) {
+        AvitoPage page = new AvitoPage();
         SelenideElement element = pageManager
                 .getCurrentPage()
                 .getElement(list);
         element
                 .shouldBe(Condition.visible)
                 .click();
-        SelenideElement element2 = pageManager
-                .getCurrentPage()
-                .getElement(value.getValue());
-        element2
+        $(Selectors.byXpath(page.getSortDate()))
                 .shouldBe(Condition.visible)
                 .click();
+
         LOGGER.info("в выпадающем '{}' выбрано значение '{}'", list, value.getValue());
     }
 
